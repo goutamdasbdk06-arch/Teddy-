@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Teddy Day My Jalebi 🧸</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(180deg,#ffd1e8,#ff9ccf);
+  font-family:Arial, sans-serif;
+}
+
+.card{
+  background:rgba(255,255,255,0.35);
+  backdrop-filter:blur(8px);
+  border-radius:20px;
+  padding:20px;
+  width:340px;
+  text-align:center;
+  animation:fadeIn 1.5s ease;
+}
+
+/* TEDDY */
+.teddy{
+  position:relative;
+  width:180px;
+  height:220px;
+  margin:0 auto;
+  animation:float 3s ease-in-out infinite;
+}
+
+.head{
+  width:120px;
+  height:120px;
+  background:#c58b5a;
+  border-radius:50%;
+  margin:0 auto;
+  position:relative;
+}
+
+.ear{
+  width:45px;
+  height:45px;
+  background:#c58b5a;
+  border-radius:50%;
+  position:absolute;
+  top:10px;
+}
+
+.ear.left{left:-20px;}
+.ear.right{right:-20px;}
+
+.eye{
+  width:10px;
+  height:10px;
+  background:#000;
+  border-radius:50%;
+  position:absolute;
+  top:50px;
+}
+
+.eye.left{left:35px;}
+.eye.right{right:35px;}
+
+.nose{
+  width:16px;
+  height:12px;
+  background:#000;
+  border-radius:50%;
+  position:absolute;
+  top:72px;
+  left:52px;
+}
+
+.body{
+  width:150px;
+  height:120px;
+  background:#c58b5a;
+  border-radius:80px;
+  margin: -10px auto 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.heart{
+  font-size:24px;
+  animation:pulse 1.5s infinite;
+}
+
+/* TEXT */
+h1{
+  font-size:22px;
+  color:#6b0036;
+  margin:10px 0;
+}
+
+p{
+  font-size:14px;
+  color:#4a0024;
+  line-height:1.6;
+}
+
+.signature{
+  margin-top:8px;
+  font-size:13px;
+  color:#6b0036;
+}
+
+/* FINAL LINE */
+.forever{
+  margin-top:14px;
+  font-size:18px;
+  font-weight:bold;
+  color:#6b0036;
+  opacity:0;
+  animation:showLove 2s ease forwards;
+  animation-delay:2.5s;
+}
+
+/* ANIMATIONS */
+@keyframes float{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-12px);}
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes showLove{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="teddy">
+    <div class="head">
+      <div class="ear left"></div>
+      <div class="ear right"></div>
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="nose"></div>
+    </div>
+    <div class="body">
+      <div class="heart">🤍</div>
+    </div>
+  </div>
+
+  <h1>Happy Teddy Day<br>My Jalebi 🧸💗</h1>
+
+  <p>
+    My Jalebi 😚💗<br><br>
+    Just like this little teddy, I want to be the one who stays with you in every mood — holding you close when you’re smiling and even closer when you’re silent. On this Teddy Day, I’m sending you a piece of my heart wrapped in softness, warmth, and endless care.
+  </p>
+
+  <div class="signature">— Always Yours 💞</div>
+
+  <div class="forever">Love you Forever ♾️💗</div>
+
+</div>
+
+</body>
+</html>
